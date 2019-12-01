@@ -1,0 +1,78 @@
+c1.cpp
+
+
+
+[m.doganay34@eng1 week5]$ c++ c1.cpp
+[m.doganay34@eng1 week5]$ ./a.out
+Size of arr2d(10 rows and 12 cols) is=480 bytes
+*ptr1 is: 3
+ptr1  is 140733878704016
+ptr1+4 is  140733878704032
+*(ptr1+4) is 4
+ptr2 is 140733878704064
+(ptr2+2) is 140733878704072
+*(ptr2+2) is 5
+ ptr1+? =ptr2
+12
+
+CORRECT!
+
+ Can you guess the address of arr2d[1][2]?
+140733878704072
+
+CORRECT!
+
+[m.doganay34@eng1 week5]$
+
+////////////////////////////////////////////////////////////////////
+
+c2.cpp
+
+arr2d[0][0]= 3
+arr2d[0][4]= 4
+arr2d[1][2]= 5
+ptr[0][0]=3
+ptr[0][4]=4
+ptr[1][2]=5
+ptr[0][9999]=0
+1[m.doganay34@eng1 week5]$ nano c2.cpp
+[m.doganay34@eng1 week5]$ ./a.out
+arr2d[0][0]= 3
+arr2d[0][4]= 4
+arr2d[1][2]= 5
+ptr[0][0]=3
+ptr[0][4]=4
+ptr[1][2]=5
+ptr[0][9999]=0
+1[m.doganay34@eng1 week5]$ nano c2.cpp
+[m.doganay34@eng1 week5]$ c++ c2.cpp
+c2.cpp: In function ‘int main()’:
+c2.cpp:47:20: error: expected ‘;’ before string constant
+[m.doganay34@eng1 week5]$ nano c2.cpp
+[m.doganay34@eng1 week5]$ c++ c2.cpp
+c2.cpp: In function ‘int main()’:
+c2.cpp:47:28: error: expected primary-expression before ‘;’ token
+[m.doganay34@eng1 week5]$ nano c2.cpp
+[m.doganay34@eng1 week5]$ c++ c2.cpp
+c2.cpp: In function ‘int main()’:
+c2.cpp:49:8: error: expected primary-expression before ‘return’
+c2.cpp:49:8: error: expected ‘;’ before ‘return’
+[m.doganay34@eng1 week5]$ nano c2.cpp
+[m.doganay34@eng1 week5]$ c++ c2.cpp
+c2.cpp: In function ‘int main()’:
+c2.cpp:49:8: error: expected ‘;’ before ‘return’
+[m.doganay34@eng1 week5]$ nano c2.cpp
+[m.doganay34@eng1 week5]$ c++ c2.cpp
+[m.doganay34@eng1 week5]$ ./a.out
+arr2d[0][0]= 3
+arr2d[0][4]= 4
+arr2d[1][2]= 5
+ptr[0][0]=3
+ptr[0][4]=4
+ptr[1][2]=5
+ptr[0][9999]=0
+1
+[m.doganay34@eng1 week5]$ clear
+[m.doganay34@eng1 week5]$
+
+

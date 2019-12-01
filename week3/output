@@ -1,0 +1,34 @@
+
+[m.doganay34@eng1 week3]$ ./a.out
+The size of bool is:1 byte
+The size of char is:1 byte
+The size of int is:4 byte
+The size of arr is:40 byte
+The size of the first element arr is pointing to:4 bytes
+The size of double is:8 bytes
+
+The address of the bool is:140736296413746
+The address of the char is:140736296413747
+The address of the int is:140736296413748
+The address of the arr is:140736296413680
+The address of the arr[1] is:140736296413684
+The address of the arr[0] is:140736296413680
+The address of the double is:140736296413752
+Can you type the address of arr[2] and press enter >>140736296413688
+YES! You guessed right!
+
+*(arr+2)=1804289383
+arr[2]+=1;
+Can you guess the value of arr[2]?
+1804289384
+YES! You guessed right!
+
+int * ptr = arr;
+*(ptr+2)+=1;
+Can you guess the value of arr[2]?
+1804289385
+YES! You guessed right!
+ arr[2] is equal to *(ptr+2) and its value is 1804289385
+
+[m.doganay34@eng1 week3]$
+
